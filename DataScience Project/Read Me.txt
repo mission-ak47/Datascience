@@ -1,0 +1,116 @@
+Scoring Rubric
+Are my answers supported with data? (20 Points)
+Tables, graphs, and charts must support your evaluation/answers.
+Categorical variables: Bar plot
+Continuous variables: Histogram
+It MUST run in Google Collab. You will also save the Google Collab notebook as a .ipynb notebook and upload that to Canvas . (5 Points) - yes
+Public dataset (5 Points) - yes
+Pick a public dataset that can be used for Regression or Classification. You MUST get approval for your dataset from the TAs. - yes
+What code is yours and what have you adapted? (5 Points) -->
+You must explain what code you wrote and what you have done that is different. Failure to cite ANY code will result in a zero for this section.
+Did I explain my code clearly? (15 Points) Your code review score will be scaled to a range of 0 to 10 and be used for this score. --> 
+Did I explain my licensing clearly? (5 Points) Failure to cite a clear license will result in a zero for this section.
+
+
+* What are the data types? (Only numeric and categorical)
+--> Numerical and Categorical
+ 0   Status of existing checking account                       1000 non-null   object
+ 1   Duration in month                                         1000 non-null   int64 
+ 2   Credit history                                            1000 non-null   object
+ 3   Purpose                                                   1000 non-null   object
+ 4   Credit amount                                             1000 non-null   int64 
+ 5   Savings account/bonds                                     1000 non-null   object
+ 6   Present employment since                                  1000 non-null   object
+ 7   Installment rate in percentage of disposable income       1000 non-null   int64 
+ 8   Other debtors / guarantors                                1000 non-null   object
+ 9   Present residence since                                   1000 non-null   int64 
+ 10  Property                                                  1000 non-null   object
+ 11  Age                                                       1000 non-null   int64 
+ 12  Other installment plans                                   1000 non-null   object
+ 13  Housing                                                   1000 non-null   object
+ 14  Number of existing credits at this bank                   1000 non-null   int64 
+ 15  Job                                                       1000 non-null   object
+ 16  Number of people being liable to provide maintenance for  1000 non-null   int64 
+ 17  Telephone                                                 1000 non-null   int64 
+ 18  foreign worker                                            1000 non-null   object
+ 19  Target                                                    1000 non-null   int64 
+ 20  Sex                                                       1000 non-null   object
+ 21  Personal status                                           1000 non-null   object
+ 
+* Are there missing values?
+treating missing values in data.
+Delete the missing value rows if there are only few records
+Impute the missing values with MEDIAN value for continuous variables
+Impute the missing values with MODE value for categorical variables
+Interpolate the values based on nearby values
+Interpolate the values based on business logic
+No Missing Values Here
+Status of existing checking account                         0
+Duration in month                                           0
+Credit history                                              0
+Purpose                                                     0
+Credit amount                                               0
+Savings account/bonds                                       0
+Present employment since                                    0
+Installment rate in percentage of disposable income         0
+Other debtors / guarantors                                  0
+Present residence since                                     0
+Property                                                    0
+Age                                                         0
+Other installment plans                                     0
+Housing                                                     0
+Number of existing credits at this bank                     0
+Job                                                         0
+Number of people being liable to provide maintenance for    0
+Telephone                                                   0
+foreign worker                                              0
+Target                                                      0
+Sex                                                         0
+Personal status                                             0
+dtype: int64
+
+* What are the likely distributions of the numeric variables?
+Added in the notebook.
+* Which independent variables are useful to predict a target (dependent variable)? (Use at least three methods)
+Visual exploration of relationship between variables
+Continuous Vs Continuous ---- Scatter Plot
+Categorical Vs Continuous---- Box Plot
+Categorical Vs Categorical---- Grouped Bar Plots
+Statistical measurement of relationship strength between variables
+Continuous Vs Continuous ---- Correlation matrix
+Categorical Vs Continuous---- ANOVA test
+Categorical Vs Categorical--- Chi-Square test
+
+Based on chi square, corr and Box plot, the selected variables: 
+ 'Status of existing checking account','Credit history', 'Purpose','Savings account/bonds','Present employment since','Personal status','Other debtors / guarantors','Property','Age','Other installment plans','Housing','Credit amount','foreign worker','Duration in month'
+
+* Which independent variables have missing data? How much? 
+None
+* Do the training and test sets have the same data?
+
+* In the predictor variables independent of all the other predictor variables?
+
+* Which predictor variables are the most important?
+
+* Do the ranges of the predictor variables make sense?
+
+* What are the distributions of the predictor variables?   
+
+* Remove outliers and keep outliers (does if have an effect of the final predictive model)?
+
+* Remove 1%, 5%, and 10% of your data randomly and impute the values back using at least 3 imputation methods. How well did the methods recover the missing values?  That is remove some data, check the % error on residuals for numeric data and check for bias and variance of the error.
+
+* Which independent variables are useful to predict a target (dependent variable)?
+
+* Which independent variable have missing data? How much? 
+
+* Do the training and test sets have the same data?
+
+* In the predictor variables independent of all the other predictor variables?
+
+* Which predictor variables are the most important?
+
+* Do the ranges of the predictor variables make sense?
+
+* What are the distributions of the predictor variables?
+   
